@@ -80,7 +80,7 @@ class ViewController: UIViewController {
             {
                 for result in results as! [NSManagedObject]
                 {
-                    
+                    //TODO stub
                 }
             }
         
