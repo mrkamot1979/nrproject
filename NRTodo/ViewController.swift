@@ -80,7 +80,33 @@ class ViewController: UIViewController {
             {
                 for result in results as! [NSManagedObject]
                 {
-                    //TODO stub
+                    if let myTitle = result.value(forKey: "title") as? String
+                    {
+                        titles.append(myTitle)
+                    }
+                    else
+                    {
+                        titles.append(" ")
+                    }
+                    
+                    
+                    if let mySubtitle = result.value(forKey: "subtitle") as? String
+                    {
+                        subtitles.append(mySubtitle)
+                    }
+                    else
+                    {
+                        subtitles.append(" ")
+                    }
+                    
+                    if let myCoordinates = result.value(forKey: "coordinates") as? String
+                    {
+                        coordinates.append(myCoordinates)
+                    }
+                    else
+                    {
+                        coordinates.append(" ")
+                    }
                 }
             }
         
