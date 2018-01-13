@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         
         //saveThis(title: "Trello", subtitle: "Trello", coordinates: "Trello")
         //saveThis(title:"Test getthis()", subtitle: "See if getthis retrieves information", coordinates: "22")
-        
+        getThis()
         
         
     }
@@ -109,7 +109,7 @@ class ViewController: UIViewController {
                     }
                 }
             }
-        
+        print (titles)
         }
         catch
         {
