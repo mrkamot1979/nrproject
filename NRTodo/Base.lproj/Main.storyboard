@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--View Controller-->
         <scene sceneID="DQm-oT-hYw">
             <objects>
                 <viewController id="MvU-9q-Qfg" sceneMemberID="viewController">
@@ -22,13 +22,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="fCe-Qm-Nda"/>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="MWk-56-0Vw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hjV-SG-XjM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1218" y="-133"/>
         </scene>
-        <!--Item 1-->
+        <!--View Controller-->
         <scene sceneID="p5c-Ad-VCh">
             <objects>
                 <viewController id="zaD-Ve-133" customClass="ViewController" customModule="NRTodo" customModuleProvider="target" sceneMemberID="viewController">
@@ -41,7 +41,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="mF7-Au-dI5"/>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="Zoc-n2-Vkx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GQS-ae-zf9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
