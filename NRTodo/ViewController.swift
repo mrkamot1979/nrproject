@@ -14,8 +14,25 @@ var subtitles:[String] = []
 var coordinates:[String] = []
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    
+    @IBOutlet weak var myTableView: UITableView!
+    
+    //number of rows
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return titles.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = titles[indexPath.row]
+        cell.detailTextLabel?.text = subtitles[indexPath.row]
+        return cell
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,7 +40,7 @@ class ViewController: UIViewController {
         
         //saveThis(title: "Trello", subtitle: "Trello", coordinates: "Trello")
         //saveThis(title:"Test getthis()", subtitle: "See if getthis retrieves information", coordinates: "22")
-        getThis()
+        //getThis()
         
         
     }
