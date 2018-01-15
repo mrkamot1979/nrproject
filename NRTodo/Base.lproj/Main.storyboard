@@ -84,14 +84,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="dTE-vU-ufr" secondAttribute="trailing" constant="18" id="3wK-3C-K0d"/>
-                            <constraint firstItem="dTE-vU-ufr" firstAttribute="top" secondItem="uxd-6W-aHn" secondAttribute="bottom" constant="8" id="BRi-EG-zdD"/>
-                            <constraint firstItem="doh-ZY-yio" firstAttribute="top" secondItem="dTE-vU-ufr" secondAttribute="bottom" constant="37" id="LN7-n9-fae"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dTE-vU-ufr" secondAttribute="trailing" constant="18" id="77N-36-6aC"/>
                             <constraint firstItem="doh-ZY-yio" firstAttribute="leading" secondItem="tnT-Vw-Itv" secondAttribute="leading" id="W0x-aD-hQ4"/>
                             <constraint firstItem="fJm-86-tYD" firstAttribute="top" secondItem="doh-ZY-yio" secondAttribute="bottom" id="WK8-Iz-gq0"/>
                             <constraint firstAttribute="trailing" secondItem="doh-ZY-yio" secondAttribute="trailing" id="Z6N-FT-Dsa"/>
-                            <constraint firstItem="doh-ZY-yio" firstAttribute="top" secondItem="dTE-vU-ufr" secondAttribute="bottom" constant="24" id="bov-Nr-hlk"/>
-                            <constraint firstItem="dTE-vU-ufr" firstAttribute="leading" secondItem="tnT-Vw-Itv" secondAttribute="leadingMargin" constant="18" id="cTi-T6-eCe"/>
+                            <constraint firstItem="dTE-vU-ufr" firstAttribute="top" secondItem="uxd-6W-aHn" secondAttribute="bottom" constant="8" id="cpC-ob-lNK"/>
+                            <constraint firstItem="dTE-vU-ufr" firstAttribute="leading" secondItem="tnT-Vw-Itv" secondAttribute="leadingMargin" constant="18" id="gpG-Wi-rlk"/>
+                            <constraint firstItem="doh-ZY-yio" firstAttribute="top" secondItem="dTE-vU-ufr" secondAttribute="bottom" constant="24" id="uAf-pQ-MKO"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="more" id="Zoc-n2-Vkx"/>

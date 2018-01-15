@@ -13,6 +13,8 @@ var titles:[String] = []
 var subtitles:[String] = []
 var coordinates:[String] = []
 
+var thisItem:Int = 0
+
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -31,6 +33,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.textLabel?.text = titles[indexPath.row]
         cell.detailTextLabel?.text = subtitles[indexPath.row]
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.delete
+        {
+            thisItem = indexPath.row
+        }
     }
     
     override func viewDidLoad() {
