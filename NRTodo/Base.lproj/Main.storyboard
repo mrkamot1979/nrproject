@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -41,7 +42,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="doh-ZY-yio">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <rect key="frame" x="0.0" y="76" width="375" height="542"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="aPA-aX-pAN" detailTextLabel="EvW-gE-W47" style="IBUITableViewCellStyleSubtitle" id="bBk-Pp-Nh4">
@@ -74,13 +75,23 @@
                                     <outlet property="delegate" destination="zaD-Ve-133" id="MXO-t7-Q3A"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current ToDo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTE-vU-ufr">
+                                <rect key="frame" x="34" y="28" width="307" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="doh-ZY-yio" secondAttribute="trailing" id="2Is-JA-os2"/>
-                            <constraint firstItem="doh-ZY-yio" firstAttribute="top" secondItem="uxd-6W-aHn" secondAttribute="bottom" id="AJn-as-pfK"/>
-                            <constraint firstItem="doh-ZY-yio" firstAttribute="leading" secondItem="tnT-Vw-Itv" secondAttribute="leading" id="Zyl-ZB-544"/>
-                            <constraint firstItem="fJm-86-tYD" firstAttribute="top" secondItem="doh-ZY-yio" secondAttribute="bottom" id="dLy-vh-DHv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dTE-vU-ufr" secondAttribute="trailing" constant="18" id="3wK-3C-K0d"/>
+                            <constraint firstItem="dTE-vU-ufr" firstAttribute="top" secondItem="uxd-6W-aHn" secondAttribute="bottom" constant="8" id="BRi-EG-zdD"/>
+                            <constraint firstItem="doh-ZY-yio" firstAttribute="top" secondItem="dTE-vU-ufr" secondAttribute="bottom" constant="37" id="LN7-n9-fae"/>
+                            <constraint firstItem="doh-ZY-yio" firstAttribute="leading" secondItem="tnT-Vw-Itv" secondAttribute="leading" id="W0x-aD-hQ4"/>
+                            <constraint firstItem="fJm-86-tYD" firstAttribute="top" secondItem="doh-ZY-yio" secondAttribute="bottom" id="WK8-Iz-gq0"/>
+                            <constraint firstAttribute="trailing" secondItem="doh-ZY-yio" secondAttribute="trailing" id="Z6N-FT-Dsa"/>
+                            <constraint firstItem="doh-ZY-yio" firstAttribute="top" secondItem="dTE-vU-ufr" secondAttribute="bottom" constant="24" id="bov-Nr-hlk"/>
+                            <constraint firstItem="dTE-vU-ufr" firstAttribute="leading" secondItem="tnT-Vw-Itv" secondAttribute="leadingMargin" constant="18" id="cTi-T6-eCe"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="more" id="Zoc-n2-Vkx"/>
