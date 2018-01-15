@@ -35,12 +35,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
+    {
         if editingStyle == UITableViewCellEditingStyle.delete
         {
             thisItem = indexPath.row
         }
     }
+    
+    
+    func deleteThis()
+    {
+        print ("testing \(titles[0])")
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
