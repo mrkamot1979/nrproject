@@ -40,13 +40,37 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if editingStyle == UITableViewCellEditingStyle.delete
         {
             thisItem = indexPath.row
+            deleteThis()
         }
     }
     
     
     func deleteThis()
     {
-        print ("testing \(titles[0])")
+        
+        //these lines are essentially the same as getThis() but it will be used to delete items.
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "NRTodo")
+   
+        do
+        {
+            try <#throwing expression#>
+        }
+        catch
+        {
+            <#statements#>
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     }
     
     
