@@ -56,11 +56,33 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
    
         do
         {
-            try <#throwing expression#>
+            let results = try context.fetch(request)
+            
+            if results.count > 0
+            {
+                for result in results as! [NSManagedObject]
+                {
+                    if let myTitle = result.value(forKey: "Title") as? String
+                    {
+                        if myTitle == titles[thisItem] //if myTitle is matched with thisItem
+                        {
+                            context.delete(result) //delete the data
+                            do
+                            {
+                                try context.save() //immediately saves the data
+                            }
+                            catch
+                            {
+                                print("There was an error in the re-saving")
+                            }
+                        }
+                }
+            }
+          }
         }
         catch
         {
-            <#statements#>
+            print("Error deleting data, please see code")
         }
     
     
