@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		002BFA792014AB830091F03E /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002BFA782014AB830091F03E /* AddItemViewController.swift */; };
+		002BFA7C2014B1670091F03E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002BFA7B2014B1670091F03E /* CoreLocation.framework */; };
 		00DFF4D12008EB82000268F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DFF4D02008EB82000268F0 /* AppDelegate.swift */; };
 		00DFF4D32008EB82000268F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DFF4D22008EB82000268F0 /* ViewController.swift */; };
 		00DFF4D62008EB82000268F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00DFF4D42008EB82000268F0 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		002BFA782014AB830091F03E /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		002BFA7B2014B1670091F03E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		00DFF4CD2008EB81000268F0 /* NRTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NRTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00DFF4D02008EB82000268F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00DFF4D22008EB82000268F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,18 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002BFA7C2014B1670091F03E /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		002BFA7A2014B1670091F03E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				002BFA7B2014B1670091F03E /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		00DFF4C42008EB81000268F0 = {
 			isa = PBXGroup;
 			children = (
 				002BFA782014AB830091F03E /* AddItemViewController.swift */,
 				00DFF4CF2008EB81000268F0 /* NRTodo */,
 				00DFF4CE2008EB81000268F0 /* Products */,
+				002BFA7A2014B1670091F03E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

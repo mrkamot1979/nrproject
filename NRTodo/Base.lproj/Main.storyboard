@@ -54,6 +54,9 @@
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addItemButton:" destination="MvU-9q-Qfg" eventType="touchUpInside" id="voI-qd-wZ6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -72,9 +75,10 @@
                     <tabBarItem key="tabBarItem" systemItem="featured" id="MWk-56-0Vw"/>
                     <connections>
                         <outlet property="addItemButtion" destination="ika-LU-UuB" id="8Km-qI-U7U"/>
-                        <outlet property="addItemMapView" destination="gVg-ci-EgO" id="XJE-GU-7gh"/>
-                        <outlet property="addItemSubtitle" destination="j4G-XL-v1x" id="upq-6m-hJK"/>
+                        <outlet property="addItemMapView" destination="gVg-ci-EgO" id="Hci-mc-XWr"/>
+                        <outlet property="addItemSubtitle" destination="j4G-XL-v1x" id="qHp-kx-4zo"/>
                         <outlet property="addItemTitle" destination="hpp-Hc-Zj3" id="iFv-bh-Afa"/>
+                        <outlet property="test" destination="hpp-Hc-Zj3" id="Nmg-R0-8qE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hjV-SG-XjM" userLabel="First Responder" sceneMemberID="firstResponder"/>
