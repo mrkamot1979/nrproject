@@ -21,6 +21,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var myTableView: UITableView!
     
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        getThis()
+        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        //saveThis(title: "Trello", subtitle: "Trello", coordinates: "Trello")
+        //saveThis(title:"Test getthis()", subtitle: "See if getthis retrieves information", coordinates: "22")
+        //¥¥getThis()
+        
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+
+    
+    
     //number of rows
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -41,6 +64,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         {
             thisItem = indexPath.row
             deleteThis()
+            getThis()
         }
     }
     
@@ -84,39 +108,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         {
             print("Error deleting data, please see code")
         }
-    
-    
-    
-    
-    
-    
-    
-    
-    
     }
     
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        getThis()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        
-        //saveThis(title: "Trello", subtitle: "Trello", coordinates: "Trello")
-        //saveThis(title:"Test getthis()", subtitle: "See if getthis retrieves information", coordinates: "22")
-        //getThis()
-        
-        
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    func saveThis(title:String, subtitle:String, coordinates:String)
+       func saveThis(title:String, subtitle:String, coordinates:String)
     {
         //core data boilerplate
         
