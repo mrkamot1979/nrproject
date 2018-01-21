@@ -14,10 +14,12 @@ class AddItemViewController: UIViewController {
     @IBOutlet weak var addItemTitle: UITextField!
     @IBOutlet weak var addItemSubtitle: UITextField!
     
-    @IBOutlet weak var addItemButtion: UIButton!
+    
     @IBOutlet weak var addItemMapView: MKMapView!
     
     
+    @IBAction func addItemButton(_ sender: Any) {
+    }
     
     
     override func viewDidLoad() {
