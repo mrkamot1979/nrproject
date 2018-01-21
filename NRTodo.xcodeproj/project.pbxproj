@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002BFA792014AB830091F03E /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002BFA782014AB830091F03E /* AddItemViewController.swift */; };
 		00DFF4D12008EB82000268F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DFF4D02008EB82000268F0 /* AppDelegate.swift */; };
 		00DFF4D32008EB82000268F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DFF4D22008EB82000268F0 /* ViewController.swift */; };
 		00DFF4D62008EB82000268F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00DFF4D42008EB82000268F0 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		002BFA782014AB830091F03E /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		00DFF4CD2008EB81000268F0 /* NRTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NRTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00DFF4D02008EB82000268F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00DFF4D22008EB82000268F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 		00DFF4C42008EB81000268F0 = {
 			isa = PBXGroup;
 			children = (
+				002BFA782014AB830091F03E /* AddItemViewController.swift */,
 				00DFF4CF2008EB81000268F0 /* NRTodo */,
 				00DFF4CE2008EB81000268F0 /* Products */,
 			);
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00DFF4D32008EB82000268F0 /* ViewController.swift in Sources */,
+				002BFA792014AB830091F03E /* AddItemViewController.swift in Sources */,
 				00DFF4D92008EB82000268F0 /* NRTodo.xcdatamodeld in Sources */,
 				00DFF4D12008EB82000268F0 /* AppDelegate.swift in Sources */,
 			);
@@ -306,6 +310,7 @@
 				00DFF4E42008EB82000268F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

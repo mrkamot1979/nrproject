@@ -6,14 +6,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Add Item View Controller-->
         <scene sceneID="DQm-oT-hYw">
             <objects>
-                <viewController id="MvU-9q-Qfg" sceneMemberID="viewController">
+                <viewController id="MvU-9q-Qfg" customClass="AddItemViewController" customModule="NRTodo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="72N-ip-kbb"/>
                         <viewControllerLayoutGuide type="bottom" id="Vic-LD-uiB"/>
@@ -21,13 +22,64 @@
                     <view key="view" contentMode="scaleToFill" id="9yT-vm-aJc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hpp-Hc-Zj3">
+                                <rect key="frame" x="0.0" y="65" width="359" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="UqU-dx-H80"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Subtitle" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j4G-XL-v1x">
+                                <rect key="frame" x="0.0" y="119" width="359" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GEr-Uv-coz"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gVg-ci-EgO">
+                                <rect key="frame" x="0.0" y="171" width="375" height="361"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gVg-ci-EgO" secondAttribute="height" multiplier="375:361" id="7LJ-ZU-bFZ"/>
+                                </constraints>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ika-LU-UuB">
+                                <rect key="frame" x="141" y="562" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Item">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gVg-ci-EgO" firstAttribute="top" secondItem="j4G-XL-v1x" secondAttribute="bottom" constant="22" id="0LO-hs-dpT"/>
+                            <constraint firstAttribute="trailing" secondItem="gVg-ci-EgO" secondAttribute="trailing" id="0Sg-Mi-9US"/>
+                            <constraint firstItem="hpp-Hc-Zj3" firstAttribute="top" secondItem="72N-ip-kbb" secondAttribute="bottom" constant="45" id="98W-PW-v4f"/>
+                            <constraint firstItem="gVg-ci-EgO" firstAttribute="leading" secondItem="9yT-vm-aJc" secondAttribute="leading" id="I4I-nY-mVj"/>
+                            <constraint firstAttribute="trailing" secondItem="j4G-XL-v1x" secondAttribute="trailing" constant="16" id="aSj-53-LKs"/>
+                            <constraint firstItem="j4G-XL-v1x" firstAttribute="top" secondItem="hpp-Hc-Zj3" secondAttribute="bottom" constant="24" id="j9v-2F-Gxf"/>
+                            <constraint firstAttribute="trailing" secondItem="hpp-Hc-Zj3" secondAttribute="trailing" constant="16" id="u4z-5s-Xdm"/>
+                            <constraint firstItem="hpp-Hc-Zj3" firstAttribute="leading" secondItem="9yT-vm-aJc" secondAttribute="leading" id="xVE-AG-6LT"/>
+                            <constraint firstItem="j4G-XL-v1x" firstAttribute="leading" secondItem="9yT-vm-aJc" secondAttribute="leading" id="ywZ-TJ-WyB"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="featured" id="MWk-56-0Vw"/>
+                    <connections>
+                        <outlet property="addItemButtion" destination="ika-LU-UuB" id="8Km-qI-U7U"/>
+                        <outlet property="addItemMapView" destination="gVg-ci-EgO" id="XJE-GU-7gh"/>
+                        <outlet property="addItemSubtitle" destination="j4G-XL-v1x" id="upq-6m-hJK"/>
+                        <outlet property="addItemTitle" destination="hpp-Hc-Zj3" id="iFv-bh-Afa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hjV-SG-XjM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1218" y="-133"/>
+            <point key="canvasLocation" x="1216.8" y="-133.5832083958021"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="p5c-Ad-VCh">
