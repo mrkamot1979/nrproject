@@ -26,7 +26,9 @@ class AddItemViewController: UIViewController, CLLocationManagerDelegate {
     {
         if txtTitle.text != "" && txtSubtitle.text != ""
         {
-            
+            saveThis(title: txtTitle.text!, subtitle: txtSubtitle.text!, coordinates: "\(location.coordinate.latitude)$\(location.coordinate.longitude)")
+            txtTitle.text = ""
+            txtSubtitle.text = ""
         }
     }
     
