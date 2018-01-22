@@ -112,32 +112,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     
-       func saveThis(title:String, subtitle:String, coordinates:String)
-    {
-        //core data boilerplate
-        
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context = appDelegate.persistentContainer.viewContext
-        
-        
-        let newItem = NSEntityDescription.insertNewObject(forEntityName: "NRTodo", into: context)
-        
-        newItem.setValue(title, forKey: "title")
-        newItem.setValue(subtitle, forKey: "subtitle")
-        newItem.setValue(coordinates, forKey: "coordinates")
-        
-        do
-        {
-            try context.save()
-            print("Saved")
-        }
-        catch
-        {
-            print("Error encountered")
-        }
-        
-    }
-    
+         
     func getThis()
     {
         //core data boilerplate
