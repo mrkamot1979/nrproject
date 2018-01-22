@@ -10,24 +10,31 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class AddItemViewController: UIViewController {
+class AddItemViewController: UIViewController, CLLocationManagerDelegate {
     
     
     @IBOutlet weak var addItemTitle: UITextField!
     @IBOutlet weak var addItemSubtitle: UITextField!
-    
-    
     @IBOutlet weak var addItemMapView: MKMapView!
+    
+
+    let manager = CLLocationManager()
+    
     
     
     @IBAction func addItemButton(_ sender: Any) {
     }
     
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        manager.delegate = self
+        manager.desiredAccuracy = kCLLocationAccuracyBest
+        manager.requestWhenInUseAuthorization()
+        manager.startUpdatingLocation()
     }
 
     override func didReceiveMemoryWarning() {
