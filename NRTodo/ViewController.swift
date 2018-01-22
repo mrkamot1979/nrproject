@@ -22,10 +22,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var myTableView: UITableView!
     
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         
-        getThis()
         // Do any additional setup after loading the view, typically from a nib.
         
         
@@ -34,6 +34,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //¥¥getThis()
         
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        getThis()
     }
     
     override func didReceiveMemoryWarning() {
