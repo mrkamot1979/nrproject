@@ -13,17 +13,12 @@ import CoreLocation
 class AddItemViewController: UIViewController, CLLocationManagerDelegate {
     
     
-    @IBOutlet weak var addItemTitle: UITextField!
-    @IBOutlet weak var addItemSubtitle: UITextField!
-    @IBOutlet weak var addItemMapView: MKMapView!
-    
+        
 
     let manager = CLLocationManager()
     
     
     
-    @IBAction func addItemButton(_ sender: Any) {
-    }
     
     
     override func viewDidLoad()
