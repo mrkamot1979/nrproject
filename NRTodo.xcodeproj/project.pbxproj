@@ -15,6 +15,7 @@
 		00DFF4D92008EB82000268F0 /* NRTodo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00DFF4D72008EB82000268F0 /* NRTodo.xcdatamodeld */; };
 		00DFF4DB2008EB82000268F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00DFF4DA2008EB82000268F0 /* Assets.xcassets */; };
 		00DFF4DE2008EB82000268F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00DFF4DC2008EB82000268F0 /* LaunchScreen.storyboard */; };
+		00EB3A4D2018B11300F1F43A /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EB3A4C2018B11300F1F43A /* detailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		00DFF4DA2008EB82000268F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00DFF4DD2008EB82000268F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00DFF4DF2008EB82000268F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00EB3A4C2018B11300F1F43A /* detailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		00DFF4C42008EB81000268F0 = {
 			isa = PBXGroup;
 			children = (
+				00EB3A4C2018B11300F1F43A /* detailViewController.swift */,
 				002BFA782014AB830091F03E /* AddItemViewController.swift */,
 				00DFF4CF2008EB81000268F0 /* NRTodo */,
 				00DFF4CE2008EB81000268F0 /* Products */,
@@ -158,6 +161,7 @@
 				00DFF4D32008EB82000268F0 /* ViewController.swift in Sources */,
 				002BFA792014AB830091F03E /* AddItemViewController.swift in Sources */,
 				00DFF4D92008EB82000268F0 /* NRTodo.xcdatamodeld in Sources */,
+				00EB3A4D2018B11300F1F43A /* detailViewController.swift in Sources */,
 				00DFF4D12008EB82000268F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
