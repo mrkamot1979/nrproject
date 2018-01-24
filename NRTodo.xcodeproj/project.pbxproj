@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		002BFA782014AB830091F03E /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		002BFA782014AB830091F03E /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddItemViewController.swift; path = ../AddItemViewController.swift; sourceTree = "<group>"; };
 		002BFA7B2014B1670091F03E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		00DFF4CD2008EB81000268F0 /* NRTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NRTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00DFF4D02008EB82000268F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +29,7 @@
 		00DFF4DA2008EB82000268F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00DFF4DD2008EB82000268F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00DFF4DF2008EB82000268F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00EB3A4C2018B11300F1F43A /* detailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
+		00EB3A4C2018B11300F1F43A /* detailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = detailViewController.swift; path = ../detailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +55,6 @@
 		00DFF4C42008EB81000268F0 = {
 			isa = PBXGroup;
 			children = (
-				00EB3A4C2018B11300F1F43A /* detailViewController.swift */,
-				002BFA782014AB830091F03E /* AddItemViewController.swift */,
 				00DFF4CF2008EB81000268F0 /* NRTodo */,
 				00DFF4CE2008EB81000268F0 /* Products */,
 				002BFA7A2014B1670091F03E /* Frameworks */,
@@ -77,6 +75,8 @@
 				00DFF4D02008EB82000268F0 /* AppDelegate.swift */,
 				00DFF4D22008EB82000268F0 /* ViewController.swift */,
 				00DFF4D42008EB82000268F0 /* Main.storyboard */,
+				00EB3A4C2018B11300F1F43A /* detailViewController.swift */,
+				002BFA782014AB830091F03E /* AddItemViewController.swift */,
 				00DFF4DA2008EB82000268F0 /* Assets.xcassets */,
 				00DFF4DC2008EB82000268F0 /* LaunchScreen.storyboard */,
 				00DFF4DF2008EB82000268F0 /* Info.plist */,

@@ -239,6 +239,7 @@
                     <tabBarItem key="tabBarItem" systemItem="more" id="Zoc-n2-Vkx"/>
                     <connections>
                         <outlet property="myTableView" destination="doh-ZY-yio" id="eMf-GO-YFh"/>
+                        <segue destination="nok-Vl-t6w" kind="show" identifier="showDetail" id="MSe-VS-bZh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GQS-ae-zf9" userLabel="First Responder" sceneMemberID="firstResponder"/>
