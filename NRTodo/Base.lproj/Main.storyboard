@@ -164,6 +164,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="detailMap" destination="uhs-qX-vXR" id="4TK-Bf-SyT"/>
                         <outlet property="txtSubtitle" destination="q81-xT-P3U" id="3Uw-ES-G7a"/>
                         <outlet property="txtTitle" destination="NGb-VR-2J4" id="vZl-ba-OTs"/>
                     </connections>

@@ -72,6 +72,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        thisItem = indexPath.row
+        performSegue(withIdentifier: "showDetail", sender: self)
+    }
     
     
     
