@@ -28,6 +28,25 @@ class detailViewController: UIViewController {
         txtTitle.text = titles[thisItem]
         txtSubtitle.text = subtitles[thisItem]
         
+        //for the map
+        if coordinates[thisItem].contains("$")
+        {
+            let array = coordinates[thisItem].components(separatedBy: "$")
+            
+            let latitude = CLLocationDegrees(array[0])
+            let longitude = CLLocationDegrees(array[1])
+            
+            let span:MKCoordinateSpan = MKCoordinateSpanMake(0.01, 0.02)
+            let location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude!, longitude!)
+            let region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
+            detailMap.setRegion(region, animated: true)
+            
+            let annotation = MKPointAnnotation()
+            
+            annotation.coordinate = location
+            detailMap.addAnnotation(annotation)
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {
